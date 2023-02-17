@@ -581,7 +581,7 @@ def GetTemporalBetweenness(t, delta=1, normalized=False):
 
     name_map = Utilities.firstOrderNameMap(t)
 
-    minD, minPaths = Paths.GetMinTemporalDistance(t, delta=1, collect_paths=True)
+    minD, minPaths = Paths.GetMinTemporalDistance(t, delta=delta, collect_paths=True)
 
     for v in t.nodes:
         for w in t.nodes:
